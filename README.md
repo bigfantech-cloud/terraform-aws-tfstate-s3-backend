@@ -43,7 +43,7 @@ provider "aws" {
 }
 
 module "remote_tfstate_bucket" {
-  source      = "app.terraform.io/bigfantech/tfstate-s3-backend/aws"
+  source      = "bigfantech-cloud/tfstate-s3-backend/aws"
   version     = "1.0.0"
 
   project_name   = "bigfantech"

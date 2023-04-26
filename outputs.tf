@@ -1,6 +1,6 @@
 output "tfstate_bucket_name" {
   description = "Name of the bucket to store .tfstate"
-  value       = aws_s3_bucket.tfstate-bucket.bucket
+  value       = aws_s3_bucket.tfstate_bucket.bucket
 }
 
 output "dynamodb_table_name" {

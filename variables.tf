@@ -9,10 +9,11 @@ variable "aws_estate" {
   Used to name bucket unique when a project's environments are setup in different account
   EOF
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "environment" {
-  description = "ex: test/dev/prod; (add *environment = test/dev/prod* in your .tfvars only if stage/env is applicable)"
-  default     = ""
+  description = "Environment name"
+  type        = string
+  default     = null
 }

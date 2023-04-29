@@ -9,7 +9,6 @@ resource "aws_s3_bucket" "tfstate_bucket" {
     Environment  = var.environment == "" ? null : var.environment
     project_name = var.project_name
     ManagedBy    = "Terraform"
-
   }
 }
 

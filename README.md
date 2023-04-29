@@ -19,7 +19,7 @@ Create S3 bucket, DyanmoDB table and setup .tfstate remote backend
     A name identifying the AWS account where the infrastructure is being setup.
     Used to name bucket unique when a project's environments are setup in different account
 
-- environment (ex: dev/prod)
+- environment (example: dev/prod)
 ```
 
 ## Resources created:
@@ -83,13 +83,13 @@ encrypt = true
 
 > Data to fill:
 
-- bucket: name of the bucket created. (ex: bucket = "bigfantech-abc-dev-tfstate").
+- bucket: name of the bucket created. (example: bucket = "bigfantech-abc-dev-tfstate").
 
 - key: file directory where the .tfstate need to be created in the bucket.
-  ex: to save `.tfstate` in folder `dev`, fill the key as: `dev/terrform.tfstate` (including the file name).
+  example: to save `.tfstate` in folder `dev`, fill the key as: `dev/terrform.tfstate` (including the file name).
 
-- dynamodb_table: Name of the DynamoDB table created. (ex: "bigfantech-dev-tfstate-lock").
-- region: Bucket region. (ex: us-east-1).
+- dynamodb_table: Name of the DynamoDB table created. (example: "bigfantech-dev-tfstate-lock").
+- region: Bucket region. (example: us-east-1).
 
 #### Example:
 

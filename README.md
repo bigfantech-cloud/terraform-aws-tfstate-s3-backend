@@ -21,16 +21,16 @@ To hire, email: `bigfantech@yahoo.com`
 
 ### Required Variables
 
-| Name         | Description | Default |
-| ------------ | ----------- | ------- |
-| project_name |             |         |
+| Name           | Description | Default |
+| -------------- | ----------- | ------- |
+| `project_name` |             |         |
 
 ### Optional Variables
 
-| Name        | Description                                                                                                                                                         | Default |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| aws_estate  | A name identifying the AWS account where the infrastructure is being setup. Used to name bucket unique when a project's environments are setup in different account | null    |
-| environment |                                                                                                                                                                     |         |
+| Name          | Description                                                                                                                                                         | Default |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| `aws_estate`  | A name identifying the AWS account where the infrastructure is being setup. Used to name bucket unique when a project's environments are setup in different account | null    |
+| `environment` |                                                                                                                                                                     |         |
 
 # Setting up .tfstate remote backend on S3.
 
@@ -123,7 +123,7 @@ terraform init
 
 ### Outputs
 
-| Name                | Description                |
-| ------------------- | -------------------------- |
-| tfstate_bucket_name | Name of the bucket         |
-| dynamodb_table_name | Name of the DynamoDB table |
+| Name                  | Description                |
+| --------------------- | -------------------------- |
+| `tfstate_bucket_name` | Name of the bucket         |
+| `dynamodb_table_name` | Name of the DynamoDB table |
